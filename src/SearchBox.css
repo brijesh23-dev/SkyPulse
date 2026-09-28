@@ -1,0 +1,101 @@
+/* SearchBox.css */
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ── Search bar ── */
+.search-form {
+  width: 100%;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  gap: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input-group:focus-within {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08), 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.search-icon-left {
+  color: rgba(255,255,255,0.5) !important;
+  font-size: 1.2rem !important;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  caret-color: rgba(255,255,255,0.8);
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  border: none;
+  border-radius: 12px;
+  padding: 0.55rem 1.25rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 20px rgba(96, 165, 250, 0.45);
+}
+
+.search-btn:active {
+  transform: scale(0.97);
+}
+
+/* ── Geo button ── */
+.geo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 0.55rem 1.1rem;
+  color: rgba(255,255,255,0.75);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.geo-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.28);
+}
